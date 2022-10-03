@@ -61,7 +61,7 @@ header {
   background-color: white;
 }
 
-header :not()) {
+header :not() {
   opacity: 0.5;
 }
 
