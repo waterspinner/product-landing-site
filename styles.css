@@ -1,0 +1,234 @@
+/**Global element styling **/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: 'Oswald', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/**Global classes settings **/
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px white solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+header :not()) {
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    max-height: 220px;
+  }
+}
+
+.logo {
+  height: 100px;
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    height: 85px;
+  }
+}
+
+.logo img {
+  height: 100%;
+  margin-left: 22px; 
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+.welding-sub {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+@media (max-width: 650px) {
+  .welding-sub {
+    margin-top: 200px;
+  }
+}
+
+.welding-sub h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#form input[type='submit'] {
+ max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px auto;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#submit {
+  margin-top: 5px;
+}
+
+.grid .tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  margin-left: 20px; 
+}
+
+.grid .description {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding: 10px;
+}
+
+#video {
+    border: solid white;
+    border-radius: 2px;
+}
+
+#how-it-works {
+  padding: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+#pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  border: solid;
+  padding: 10px;
+  margin: 20px;
+}
+
+footer ul {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+span {
+   display: flex;
+  width: 100%;
+  justify-content: right;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin: 5px;
+}
